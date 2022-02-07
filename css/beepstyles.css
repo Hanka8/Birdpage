@@ -1,0 +1,118 @@
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  -webkit-text-stroke: 0.5px white;
+  font-size: 3rem;
+  text-align: center;
+  padding: 5%;
+}
+
+body {
+  text-align: center;
+  background-image: url("https://media0.giphy.com/media/OkVVUlG40FnuE/giphy.gif?cid=ecf05e472cnln25946twfj7d3m3mv5qpljn9xnhw2wavf6bf&rid=giphy.gif&ct=g");
+  background-size: cover;
+
+}
+
+#wtf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont-maine {
+  width: 30%;
+}
+
+.col-6 {
+  padding-bottom: 5%;
+}
+
+.butt {
+  width: 126px;
+  height: 180px;
+  background-color: red;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px white;
+}
+
+.pressed{
+  box-shadow: 0 0 20px white;
+  opacity: 0.5;
+}
+
+#first {
+  background-image: url("images/1.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 10px red;
+  border-style: solid;
+}
+
+#second {
+  background-image: url("images/2.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 10px blue;
+  border-style: solid;
+}
+
+.keyDownDiv {
+  text-align: center;
+  padding-bottom: 10%;
+}
+
+.backKey{
+  padding: 10%;
+  text-align: center;
+}
+
+p {
+  color: #696969;
+}
+
+@media (max-width: 992px){
+  body {
+    background-image: url("https://media4.giphy.com/media/CGZGV8wix4lvJn3dxy/giphy.gif?cid=ecf05e47z7emz2179lwy2pua5bjocazps4loigwiz0m3wxsf&rid=giphy.gif&ct=g: ;");
+  }
+  h1 {
+    color: blue;
+      -webkit-text-stroke: 0.5px #696969;
+  }
+  .butt {
+    width: 252px;
+    height: 360px;
+  }
+  .cont-maine {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .keyDownDiv {
+    display: none;
+  }
+  .backKey{
+    padding: 1%;
+  }
+}
+
+#third {
+  background-image: url("images/5.jpg");
+  background-size: cover;
+  border: 10px green;
+  border-style: solid;
+}
+
+#fourth {
+  background-image: url("images/7.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 10px yellow;
+  border-style: solid;
+}
