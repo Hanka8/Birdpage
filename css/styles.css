@@ -103,23 +103,18 @@
   box-shadow: 0 0 40px white;
 } */
 
+
 .birbImg {
-  border-radius: 50%;
-  border-color: black;
-  border-style: inset;
-  width: 50%;
+
 }
 
-.birbImg:hover {
-  box-shadow: 0 0 40px white;
+.divbirbImg2 {
+  width: 10%;
 }
 
 .birbImg2 {
-  border-radius: 50%;
-  width: 30%;
+  display: none;
 }
-
-
 
 /* Games */
 #games {
@@ -167,14 +162,28 @@
 }
 
 @media (max-width: 992px) {
+  .triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 300px solid red;
+  }
+
+  .triangle-down:hover {
+    border-top: 300px solid #391837;
+  }
+
   .triangle-up {
     border-bottom: 0;
-    border-top: 100px solid red;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 300px solid red;
   }
 
   .triangle-up:hover {
     border-bottom: 0;
-    border-top: 100px solid #391837;
+    border-top: 300px solid #391837;
   }
 
   .gamesContainer {
@@ -191,20 +200,33 @@
   }
 
   #games {
+    font-size: 2rem;
+    width: 100%;
+    background-repeat: repeat-x;
     height: auto;
+  }
+  .footer {
     width: 100%;
   }
-
   .navbar {
     width: 100%;
   }
+  .birbImg2 {
+    display: inline-block;
+    width: 60%;
+  }
+
 }
 
-.rotated-image {
-  border-radius: 50%;
-  border-color: black;
-  border-style: inset;
-  width: 50%;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+/* Footer */
+.footer {
+  width: 90%;
+  color: #ce282a;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  color: #ce282a;
 }

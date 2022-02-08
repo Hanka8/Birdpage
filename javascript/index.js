@@ -1,7 +1,11 @@
+var myArray = [1, "beep", "first", "fourth", "knikknikknik", "pip", "pipi", "second", "short1", "short2", "short3", "third", "zpev"];
+var randomSound = myArray[Math.floor(Math.random()*myArray.length)];
+var randomSound2 = myArray[Math.floor(Math.random()*myArray.length)];
+
 var myVar;
 
 function myFunction() {
-  myVar = setTimeout(showPage, 100);
+  myVar = setTimeout(showPage, 2000);
 }
 
 function showPage() {
@@ -19,10 +23,9 @@ $("h1").click(function(){
 });
 
 $(".birbImg").click(function(){
-  playSound("beep")
+  playSound(randomSound)
 });
 
-function clickFunction() {
-  var img = document.getElementById("clickIt");
-  img.setAttribute("class", "rotated-image");
-}
+$(".birbImg2").click(function(){
+  playSound(randomSound2)
+});
