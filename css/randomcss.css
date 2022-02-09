@@ -8,6 +8,11 @@ h1 {
   font-family: 'Press Start 2P', cursive;
 }
 
+img {
+  border: 10px solid;
+  border-color: black;
+}
+
 .image {
   padding: 5%;
 
@@ -21,8 +26,24 @@ h1 {
   text-align: center;
 }
 
+button {
+  padding-bottom: 10%;
+}
+
 body {
   background-image: url(https://media0.giphy.com/media/Ass7N88ITsb3a/giphy.gif?cid=ecf05e47af8u4gqyh62cj3q0j4yu01hwr6yp8rftghyght94&rid=giphy.gif&ct=g);
   background-size: cover;
   background-repeat: repeat-x;
+}
+
+@media (max-width: 992px) {
+  h1 {
+    padding: 15% 0 30% 0;
+  }
+
+  .centerThatFucker {
+    padding: 15%;
+  }
+
+
 }
